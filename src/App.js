@@ -28,7 +28,11 @@ console.log(list)
 
      <Col>
      { edit ? <Button onClick = {()=> dispatch(editItem(edit.id, item), setEdit(''),setItem(''))}>Edit</Button> :
+<<<<<<< HEAD
       <Button disabled = {!item} onClick={()=> dispatch(add(item), (setItem('')))}>Submit Me</Button>}
+=======
+      <Button disabled = {!item} onClick={()=> dispatch(add(item), (setItem('')))}>Submit All</Button>}
+>>>>>>> ebc4f718a0cc5f50991818e7cd221ce4bdb7c307
      </Col>
      </Form>
      </Row>

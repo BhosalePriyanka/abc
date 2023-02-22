@@ -25,10 +25,9 @@ console.log(list)
       <FormControl type = "text" placeholder = "Enter item name" value = {item} onChange={(e)=> setItem(e.target.value)} />       
       </FormGroup>
      </Col>
-
      <Col>
      { edit ? <Button onClick = {()=> dispatch(editItem(edit.id, item), setEdit(''),setItem(''))}>Edit</Button> :
-      <Button disabled = {!item} onClick={()=> dispatch(add(item), (setItem('')))}>Submit Me</Button>}
+      <Button disabled = {!item} onClick={()=> dispatch(add(item), (setItem('')))}>Submit</Button>}
      </Col>
      </Form>
      </Row>

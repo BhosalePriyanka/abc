@@ -28,9 +28,7 @@ console.log(list)
 
      <Col>
      { edit ? <Button onClick = {()=> dispatch(editItem(edit.id, item), setEdit(''),setItem(''))}>Edit</Button> :
-
       <Button disabled = {!item} onClick={()=> dispatch(add(item), (setItem('')))}>Submit Me</Button>}
-
      </Col>
      </Form>
      </Row>
@@ -41,7 +39,7 @@ console.log(list)
       <AiFillDelete onClick = {()=> dispatch(del(list.id))}/>
       </li>
       )}
-      { list.length > 0 ? <Button onClick={ ()=> dispatch(remove(list.id))}>Remove All</Button> : ''}
+      { list.length > 0 ? <Button onClick={ ()=> dispatch(remove(list.id))}>Remove</Button> : ''}
      </ul>
      
     </div>
